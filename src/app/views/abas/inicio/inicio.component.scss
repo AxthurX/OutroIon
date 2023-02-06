@@ -1,0 +1,69 @@
+.botao {
+  border-radius: 50px;
+  box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.67);
+  cursor: pointer;
+  transition: 0.4s;
+  height: 270px;
+  width: 170px !important;
+}
+
+.botao .botao-img {
+  border-radius: 40px;
+  height: inherit;
+  width: inherit;
+}
+
+.botao .botao-img img {
+  border-radius: 40px;
+  height: inherit;
+  width: inherit;
+}
+
+.botao .botao-titulo {
+  align-self: flex-end;
+  border-radius: 0px 0px 40px 40px;
+  color: #fdfdfd;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  white-space: break-spaces;
+}
+
+.botao:hover,
+.botao:focus {
+  transform: scale(0.95, 0.95);
+  box-shadow: 2px 2px 15px 7px rgba(0,0,0,0.25),
+             -2px -2px 15px 7px rgba(0,0,0,0.22);
+}
+
+.col-xl-5 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+  .content_div {
+    padding: 0px !important;
+
+    .grid_box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .box_div {
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        height: 140px;
+        margin: 16px;
+      }
+    }
+  }
+
+ion-icon {
+  font-size: 120px;
+}

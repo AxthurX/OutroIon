@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <app-btn-voltar [fechar_modal]="true"></app-btn-voltar>
+    </ion-buttons>
+    <ion-title>Teste date </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Datas de nascimentos</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Data De Nascimento </ion-label>
+      <ion-datetime
+        placeholder="Nascimento"
+        value="{{ dataNasc | date : 'yyyy-MMMM-DD' }}"
+        display-format="YYYY MMMM DD"
+        cancelText="Cancelar!!!"
+        [ngModel]="dataNasc.toISOString()"
+        (ionchange)="cambioFecha($event)"
+      ></ion-datetime>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <app-btn-voltar></app-btn-voltar>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="light">
+  <div class="content_div">
+    <div class="grid_box">
+      <ion-button
+        color="camera-outline"
+        (click)="showTelaDeFotos()"
+        class="botao col-xl-5"
+      >
+        <ion-icon name="camera-outline"></ion-icon>
+        <h6 class="botao-titulo">Fotos</h6>
+      </ion-button>
+    </div>
+    <div class="grid_box">
+      <ion-button
+        color="medium"
+        (click)="showTelaDeFotos()"
+        class="botao col-xl-5"
+      >
+        <ion-icon name="help-outline"></ion-icon>
+        <h6 class="botao-titulo">Num Sei</h6>
+      </ion-button>
+    </div>
+    <div class="grid_box">
+      <ion-button color="medium" class="botao col-xl-5">
+        <ion-icon name="hourglass-outline"></ion-icon>
+        <h6 class="botao-titulo">Em Breve</h6>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

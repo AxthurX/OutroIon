@@ -24,3 +24,15 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.vermelho span, .vermelho .sc-ion-action-sheet-md  {
+   color: rgba(215, 42, 42, 0.741) !important;
+}
+
+.swal2-container {
+  z-index: 9999999999 !important;
+}
+
+.sem-margem{
+  margin: 0px !important;
+}

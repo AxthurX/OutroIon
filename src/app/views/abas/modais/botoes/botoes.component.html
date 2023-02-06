@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <app-btn-voltar></app-btn-voltar>
+    </ion-buttons>
+    <ion-title>Teste Botões</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="navigate-outline"></ion-icon>
+      </ion-button>
+      <ion-button color="primary">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!--Exemplos de Botões Normais -->
+
+  <ion-button size="small" expand="full" color="primary">Small</ion-button>
+  <ion-button size="default" expand="full" color="primary">Default</ion-button>
+  <ion-button size="large" expand="full" [disabled]="true">Large</ion-button>
+
+  <!-- Botões Ancoras -->
+  <ion-button
+    class="top-20"
+    expand="full"
+    routerLink="/alert"
+    color="tertiary"
+    fill="outline"
+    shape="round"
+  >
+    Anchor
+  </ion-button>
+
+  <!-- iON GRID / ion-row + ion-col -->
+
+  <ion-row class="top-20">
+    <ion-col>
+      <ion-button expand="full" routerLink="/avatar" color="tertiary">
+        Avatar
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" routerLink="/action-sheet" color="tertiary">
+        Action Sheet
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <!-- FIll -->
+
+  <ion-button class="top-20" fill="clear">Clear</ion-button>
+  <ion-button class="top-20" fill="outline">Outline</ion-button>
+  <ion-button class="top-20" fill="solid">Solid</ion-button>
+</ion-content>

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <app-btn-voltar [fechar_modal]="true"></app-btn-voltar>
+    </ion-buttons>
+    <ion-title>Teste Card</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="navigate-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button color="primary">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card mode="ios" color="tertiary">
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile, and
+      climb a mountain or spend a week in the woods. Wash your spirit clean
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item color="primary">
+      <ion-icon color="light" slot="start" name="location"></ion-icon>
+      <ion-label>Marcador</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint beatae nam
+      tempora mollitia necessitatibus ipsum porro unde consequuntur. Neque
+      impedit consequuntur vitae quaerat est veritatis adipisci dolores cumque
+      possimus velit!
+    </ion-card-content>
+  </ion-card>
+
+  <!-- ion-img  -->
+  <ion-card>
+    <ion-img src="/assets/shapes.svg">
+      <ion-card-content>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia,
+        harum? Totam, nam. Quas, provident unde qui nemo fugiat deleniti
+        perferendis laboriosam animi similique exercitationem nisi natus dolores
+        ut inventore aliquam.
+      </ion-card-content>
+    </ion-img>
+  </ion-card>
+</ion-content>

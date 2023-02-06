@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <app-btn-voltar [fechar_modal]="true"></app-btn-voltar>
+    </ion-buttons>
+    <ion-title>Teste avatares </ion-title>
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <img src="/assets/images (1).jpg" alt="Imagem de avatar" />
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="ionChip">
+    <ion-chip color="primary" *ngFor="let i of [1, 1, 1, 1, 1, 1]">
+      <ion-avatar>
+        <img src="/assets/images (1).jpg" alt="imagem de avatar" />
+      </ion-avatar>
+      <ion-label>Stan Lee</ion-label>
+    </ion-chip>
+  </div>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header class="osahan-nav">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <app-btn-voltar #btnVoltar [fechar_modal]="true"></app-btn-voltar>
+    </ion-buttons>
+    <ion-title>Testes Alert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button color="primary" expand="full" (click)="presentAlert()">
+    Mostrar Alerta
+  </ion-button>
+
+  <ion-button color="secondary" expand="full" (click)="presentInput()">
+    Mostrar Input
+  </ion-button>
+</ion-content>

@@ -1,0 +1,14 @@
+<ion-header class="osahan-nav">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <app-btn-voltar #btnVoltar [fechar_modal]="true"></app-btn-voltar>
+    </ion-buttons>
+    <ion-title>Teste Action sheet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button expand="full" color="primary" (click)="presentActionSheet()">
+    Opções
+  </ion-button>
+</ion-content>

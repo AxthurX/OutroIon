@@ -1,0 +1,46 @@
+<ion-header class="osahan-nav">
+  <ion-toolbar>
+    <ion-buttons slot="start"> </ion-buttons>
+    <ion-title>Início</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding order-list-page" color="light">
+  <div class="row">
+    <ion-button (click)="showTelaActionSheet()" color="dark">
+      <ion-icon name="list-outline"></ion-icon>
+    </ion-button>
+    <ion-button (click)="showTelaCards()" color="dark">
+      <ion-icon name="document-text-outline"></ion-icon>
+    </ion-button>
+    <ion-button (click)="showTelaFab()" color="secondary">
+      <ion-icon name="egg-outline"></ion-icon>
+    </ion-button>
+    <ion-button (click)="goTo('fotos')" color="secondary">
+      <ion-icon name="camera-outline"></ion-icon>
+    </ion-button>
+    <ion-button (click)="showTelaModal()">
+      <ion-icon name="cube-outline"></ion-icon>
+    </ion-button>
+    <ion-button (click)="showTelaCheck()" color="primary">
+      <ion-icon name="checkbox-outline"></ion-icon>
+    </ion-button>
+    <ion-button (click)="showTelaAvatar()" color="tertiary">
+      <ion-icon name="person-circle-outline"></ion-icon>
+    </ion-button>
+    <ion-button (click)="showTelaAlert()" color="danger">
+      <ion-icon name="alert-circle-outline"></ion-icon>
+    </ion-button>
+    <ion-button (click)="showTelaDateTime()" color="warning">
+      <ion-icon name="calendar-outline"></ion-icon>
+    </ion-button>
+    <ion-button (click)="showTelaBotoes()" color="success">
+      <ion-icon name="logo-xbox"></ion-icon>
+    </ion-button>
+    <ion-button (click)="goTo('maps')" color="success">
+      <ion-icon name="map-outline"></ion-icon>
+    </ion-button>
+    <ion-button (click)="showTelaOutroMapa()" color="light">
+      <ion-icon name="trash"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>
